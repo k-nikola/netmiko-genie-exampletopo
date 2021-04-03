@@ -11,5 +11,5 @@ device.connect()
 current_output = device.parse("show protocols")
 diff = Diff(current_output, expected.output)
 diff.findDiff()
-print(diff)
+print("Difference between the expected output and actual output:\n","-"*50,diff)
 
