@@ -26,7 +26,7 @@ for cmd in vf_cmd:
       expected_output = ""
       for line in expected:
          expected_output+= str(line) + "\n"
-   if expected_output in output:
+   if output!= expected_output:
       print("Configuration seems to be different than expected.")
       print("Expected output: \n",expected_output)
       print("Actual output: \n",output)
