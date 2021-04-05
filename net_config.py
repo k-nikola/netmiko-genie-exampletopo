@@ -39,7 +39,7 @@ CoreRouter = {
 access_devices = [AccessSW1, AccessSW2]
 #Counter used to recall adequate device configuration file
 i = 1
-
+"""
 #Looping through all the access devices in the topology
 for device in access_devices:
    #Getting the access device configuration files ready
@@ -51,13 +51,14 @@ for device in access_devices:
    output = net_connect.send_config_set(access_cfg)
    print(output)
    i = i + 1
-
+"""
 #Getting the core device configuration file ready
 with open('ios_core_config') as cfg:
    core_cfg = cfg.read().splitlines()
    print(core_cfg)
 #Grouping core devices into a list
-core_devices = [CoreSW2, CoreSW1]
+#core_devices = [CoreSW2, CoreSW1]
+core_devices = [CoreSW1]
 #Looping through all the core devices in the topology
 for device in core_devices:
    #Connecting to the core device
@@ -72,6 +73,6 @@ with open('ios_router_config') as cfg:
 #Connecting to the router
 net_connect = ConnectHandler(**CoreRouter)
 #Sending the configuration commands and printing the results
-output = net_connect.send_config_set(router_cfg)
+output = net_connect.send_config_set(router_cfg, delay_factor=5)
 print(output)
 net_connect.disconnect()

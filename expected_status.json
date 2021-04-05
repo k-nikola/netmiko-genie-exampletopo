@@ -1,0 +1,88 @@
+{
+    "interface": {
+        "GigabitEthernet0/0": {
+            "ip_address": "192.168.6.129",
+            "interface_is_ok": "YES",
+            "method": "DHCP",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1": {
+            "ip_address": "unassigned",
+            "interface_is_ok": "YES",
+            "method": "NVRAM",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1.1": {
+            "ip_address": "192.168.121.1",
+            "interface_is_ok": "YES",
+            "method": "NVRAM",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1.10": {
+            "ip_address": "192.168.10.1",
+            "interface_is_ok": "YES",
+            "method": "manual",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1.20": {
+            "ip_address": "192.168.20.1",
+            "interface_is_ok": "YES",
+            "method": "manual",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1.30": {
+            "ip_address": "192.168.30.1",
+            "interface_is_ok": "YES",
+            "method": "manual",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/1.40": {
+            "ip_address": "192.168.40.1",
+            "interface_is_ok": "YES",
+            "method": "manual",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/2": {
+            "ip_address": "unassigned",
+            "interface_is_ok": "YES",
+            "method": "NVRAM",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/2.1": {
+            "ip_address": "unassigned",
+            "interface_is_ok": "YES",
+            "method": "unset",
+            "status": "up",
+            "protocol": "up"
+        },
+        "GigabitEthernet0/3": {
+            "ip_address": "unassigned",
+            "interface_is_ok": "YES",
+            "method": "NVRAM",
+            "status": "administratively down",
+            "protocol": "down"
+        },
+        "NVI0": {
+            "ip_address": "192.168.121.1",
+            "interface_is_ok": "YES",
+            "method": "unset",
+            "status": "up",
+            "protocol": "up"
+        },
+        "Core_": {
+            "ip_address": "",
+            "interface_is_ok": "",
+            "method": "",
+            "status": "",
+            "protocol": ""
+        }
+    }
+}
