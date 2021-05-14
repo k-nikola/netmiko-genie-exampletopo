@@ -43,7 +43,7 @@ i = 1
 #Looping through all the access devices in the topology
 for device in access_devices:
    #Getting the access device configuration files ready
-   with open('ios_access'+str(i)+'_config') as cfg:
+   with open('ios_configs/end_configs/ios_access'+str(i)+'_config') as cfg:
       access_cfg = cfg.read().splitlines()
       print(access_cfg)
    #Connecting to the access device
@@ -53,7 +53,7 @@ for device in access_devices:
    i = i + 1
 
 #Getting the core device configuration file ready
-with open('ios_core_config') as cfg:
+with open('ios_configs/end_configs/ios_core_config') as cfg:
    core_cfg = cfg.read().splitlines()
    print(core_cfg)
 #Grouping core devices into a list
@@ -67,7 +67,7 @@ for device in core_devices:
    print(output)
 
 #Getting the router configuration file ready
-with open('ios_router_config') as cfg:
+with open('ios_configs/end_configs/ios_router_config') as cfg:
    router_cfg = cfg.read().splitlines()
    print(router_cfg)
 #Connecting to the router

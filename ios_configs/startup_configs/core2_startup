@@ -1,0 +1,12 @@
+username nikola privilege 15 password 0 cisco
+line vty 0 4
+ login local
+ transport input ssh
+ exit
+hostname Core_SW2
+ip domain-name master2045.ict
+crypto key generate rsa modulus 1024
+interface vlan 1
+ no shutdown
+ ip address 192.168.121.4 255.255.255.0
+ exit

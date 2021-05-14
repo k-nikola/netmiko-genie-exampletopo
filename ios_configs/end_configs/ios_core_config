@@ -1,0 +1,22 @@
+vtp mode transparent
+spanning-tree mode rapid-pvst
+errdisable recovery cause all
+ip name-server 8.8.8.8
+no ip http server
+ip http secure-server
+ip default-gateway 192.168.121.1
+spanning-tree portfast bpduguard default
+vlan 10
+ name ServerRoom
+vlan 20
+ name Office1
+vlan 30
+ name Office2
+vlan 40
+ name Office3
+interface vlan 1
+ description ManagementVLAN
+interface range GigabitEthernet 0/0-3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ switchport trunk native vlan 1
