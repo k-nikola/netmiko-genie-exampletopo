@@ -22,4 +22,3 @@ diff = Diff(current_interface_status, expected_status)
 #Finding the difference between the two, and printing it.
 diff.findDiff()
 print("Difference between the expected output and actual output:\n","-"*50,diff)
-
